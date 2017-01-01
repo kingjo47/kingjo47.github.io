@@ -2,24 +2,24 @@
 <html>
     <head>
         <meta charset="utf-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <title>Fireworks!</title>
     </head>
     <style>
-body {
-    background-color: #000000;
-    margin: 0px;
-    overflow: hidden;
-}
+    body {
+      background-color: #000000;
+      margin: 0px;
+      overflow: hidden;
+    }
     </style>
 
 <audio controls>
-  <source src="SadSong.mp3" type="audio/mpeg">
+  <source src="assets/vedio/SadSong.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
-    <body/>
-<script>
-var SCREEN_WIDTH = window.innerWidth,
+<body/>
+  <script>
+    var SCREEN_WIDTH = window.innerWidth,
     SCREEN_HEIGHT = window.innerHeight,
     mousePos = {
         x: 400,
@@ -86,6 +86,13 @@ function loop() {
     }
 
     // clear canvas
+    // var background = new Image();
+    // background.src = 'parliamenthill.jpg';
+    // background.onload = function(){
+    //   var pattern = context.createPattern(this, "repeat");
+    //   context.fillStyle = pattern;
+    //   context.fill();
+    // }
     context.fillStyle = "rgba(0, 0, 0, 0.05)";
     context.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
